@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
     color: #333;
+    text-align: center;
+    padding-top: 80px;
 }
 
 .navbar {
@@ -9,8 +11,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #7cb1fc;
+    background: #6200ea;
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar .logo {
@@ -31,6 +38,44 @@ body {
 }
 
 .nav-links a:hover {
-    color:#22344e;
-    ;
+    color: #ffca28;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Chisinau-Moldova.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ffca28;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ffa000;
 }
