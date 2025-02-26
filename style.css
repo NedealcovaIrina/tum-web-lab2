@@ -115,3 +115,20 @@ body {
     font-size: 16px;
     color: #666;
 }
+
+.footer {
+    background: #6200ea;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
