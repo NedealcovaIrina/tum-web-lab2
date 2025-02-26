@@ -67,3 +67,6 @@ This is a landing page dedicated to showcasing the beauty and historical signifi
 - Responsive grid layout for attractions.
 - Stylish and accessible contact form with input validation.
 - Clean and modern design focused on usability and visual appeal.
+
+### Deploing a link 
+https://nedealcovairina.github.io/tum-web-lab2/
