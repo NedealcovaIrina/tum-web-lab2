@@ -64,6 +64,12 @@ This is a landing page dedicated to showcasing the beauty and historical signifi
 
 - The sheep represents a cute personification of the nature of Moldova, it is animated and a message is displayed when hovering over it.
 - Greets the user and invites them to explore the site.
+
+![Mascot](screens/sheep_noclick.png)
+
+* click *
+  
+![Mascot](screens/sheep_click.png)
   
 
 ## Technologies Used
