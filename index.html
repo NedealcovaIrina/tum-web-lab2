@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moldova Landmarks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,108 +34,130 @@
       }
   </script>
 
-    <section id="home" class="hero">
-      <h1>Discover the Beauty of Moldova</h1>
-      <p>Explore ancient monasteries, breathtaking landscapes, and rich history.</p>
-      <a href="#attractions" class="btn">Explore Now</a>
-  </section>
+    <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/Lake-Page.jpg');">
+      <div class="text-center text-white space-y-6 px-4">
+        <h1 class="text-5xl md:text-6xl font-bold">Discover the Beauty of Moldova</h1>
+        <p class="text-xl md:text-2xl">Explore ancient monasteries, breathtaking landscapes, and rich history.</p>
+        <a href="#attractions" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+          Explore Now
+        </a>
+      </div>
+    </section>
 
-  <section id="about" class="about">
-    <h2>About MoldTrip</h2>
-    <p>MoldTrip is your gateway to discovering the hidden gems of Moldova. We specialize in organizing unique excursions and trips to the most breathtaking landmarks of our country. From ancient fortresses to serene nature reserves, we provide carefully curated experiences that blend history, nature, and culture. Whether you're an avid explorer or a history enthusiast, our tours offer an unforgettable journey through Moldova's rich heritage.</p>
-    
-    <p>Our team consists of passionate local guides who know every corner of the region. We handle all the logistics — transportation, meals, and guided storytelling — so you can immerse yourself in the beauty of each destination without worrying about the details. Each trip is designed to offer an authentic taste of Moldova, with opportunities to try local wines, traditional dishes, and engage with local artisans.</p>
-    
-    <p>Why choose MoldTrip? We prioritize personalized experiences, small group sizes, and flexible itineraries to match your interests. Our goal is not just to show you places but to create memories that last a lifetime. Join us, and let’s embark on a journey to explore Moldova like never before!</p>
-</section>
+    <section id="about" class="about">
+      <h2>About MoldTrip</h2>
+      <p>MoldTrip is your gateway to discovering the hidden gems of Moldova. We specialize in organizing unique excursions and trips to the most breathtaking landmarks of our country. From ancient fortresses to serene nature reserves, we provide carefully curated experiences that blend history, nature, and culture. Whether you're an avid explorer or a history enthusiast, our tours offer an unforgettable journey through Moldova's rich heritage.</p>
+      
+      <p>Our team consists of passionate local guides who know every corner of the region. We handle all the logistics — transportation, meals, and guided storytelling — so you can immerse yourself in the beauty of each destination without worrying about the details. Each trip is designed to offer an authentic taste of Moldova, with opportunities to try local wines, traditional dishes, and engage with local artisans.</p>
+      
+      <p>Why choose MoldTrip? We prioritize personalized experiences, small group sizes, and flexible itineraries to match your interests. Our goal is not just to show you places but to create memories that last a lifetime. Join us, and let's embark on a journey to explore Moldova like never before!</p>
+    </section>
 
-  <section id="attractions" class="attractions">
-    <h2>Top Landmarks in Moldova</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="images/Chisinau.jpg" alt="Chisinau">
-            <h3>Chisinau</h3>
-            <p>The vibrant capital of Moldova, filled with parks, museums, and cultural landmarks.</p>
-            <p class="price">Price: $35</p>
+    <section id="attractions" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Top Landmarks in Moldova</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="images/Chisinau.jpg" alt="Chisinau" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Chisinau</h3>
+              <p class="text-gray-600 mb-4">The vibrant capital of Moldova, filled with parks, museums, and cultural landmarks.</p>
+              <p class="text-purple-600 font-bold">Price: $35</p>
+            </div>
           </div>
-        <div class="card">
-            <img src="images/Orheiul-Vechi.jpg" alt="Old Orhei">
-            <h3>Old Orhei</h3>
-            <p>An ancient archaeological complex with stunning views and rich history.</p>
-            <p class="price">Price: $80</p>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="images/Orheiul-Vechi.jpg" alt="Old Orhei" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Old Orhei</h3>
+              <p class="text-gray-600 mb-4">An ancient archaeological complex with stunning views and rich history.</p>
+              <p class="text-purple-600 font-bold">Price: $80</p>
+            </div>
           </div>
-        <div class="card">
-            <img src="images/Benderskaya-Krepost.jpg" alt="Bendery Fortress">
-            <h3>Bendery Fortress</h3>
-            <p>A historic fortress on the Dniester River, showcasing medieval architecture.</p>
-            <p class="price">Price: $65</p>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="images/Benderskaya-Krepost.jpg" alt="Bendery Fortress" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Bendery Fortress</h3>
+              <p class="text-gray-600 mb-4">A historic fortress on the Dniester River, showcasing medieval architecture.</p>
+              <p class="text-purple-600 font-bold">Price: $65</p>
+            </div>
           </div>
-        <div class="card">
-            <img src="images/Forest-Codri.jpg" alt="Forest Codri">
-            <h3>Forest Codri</h3>
-            <p>The largest forest in Moldova, perfect for hiking and nature lovers.</p>
-            <p class="price">Price: $20</p>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="images/Forest-Codri.jpg" alt="Forest Codri" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Forest Codri</h3>
+              <p class="text-gray-600 mb-4">The largest forest in Moldova, perfect for hiking and nature lovers.</p>
+              <p class="text-purple-600 font-bold">Price: $20</p>
+            </div>
           </div>
-        <div class="card">
-            <img src="images/Lake-Beleu.jpg" alt="Lake Beleu">
-            <h3>Lake Beleu</h3>
-            <p>A serene natural reserve, home to diverse flora and fauna.</p>
-            <p class="price">Price: $50</p>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="images/Lake-Beleu.jpg" alt="Lake Beleu" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Lake Beleu</h3>
+              <p class="text-gray-600 mb-4">A serene natural reserve, home to diverse flora and fauna.</p>
+              <p class="text-purple-600 font-bold">Price: $50</p>
+            </div>
           </div>
-        <div class="card">
-            <img src="images/100-Holmov.jpg" alt="100 Hills">
-            <h3>100 Hills</h3>
-            <p>It is assumed that these were necropolises of ancient tribal leaders, hundreds of mounds of soldiers who fell in battles.</p>
-            <p class="price">Price: $30</p>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="images/100-Holmov.jpg" alt="100 Hills" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">100 Hills</h3>
+              <p class="text-gray-600 mb-4">It is assumed that these were necropolises of ancient tribal leaders, hundreds of mounds of soldiers who fell in battles.</p>
+              <p class="text-purple-600 font-bold">Price: $30</p>
+            </div>
           </div>
-        <div class="card">
-          <img src="images/Forest-Light.jpg" alt="Candle of Gratitude">
-          <h3>Candle of Gratitude</h3>
-          <p>The monument in Soroki is located on the slope between the Dniester River and the Bechir gorge.</p>
-          <p class="price">Price: $30</p>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="images/Forest-Light.jpg" alt="Candle of Gratitude" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Candle of Gratitude</h3>
+              <p class="text-gray-600 mb-4">The monument in Soroki is located on the slope between the Dniester River and the Bechir gorge.</p>
+              <p class="text-purple-600 font-bold">Price: $30</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="images/Milestii-Mici.jpg" alt="Milestii Mici" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Milestii Mici</h3>
+              <p class="text-gray-600 mb-4">The world's largest underground wine cellar, holding over 2 million bottles of wine.</p>
+              <p class="text-purple-600 font-bold">Price: $70</p>
+            </div>
+          </div>
         </div>
-      <div class="card">
-        <img src="images/Milestii-Mici.jpg" alt="Milestii Mici">
-        <h3>Milestii Mici</h3>
-        <p>The world's largest underground wine cellar, holding over 2 million bottles of wine.</p>
-        <p class="price">Price: $70</p>
+      </div>
+    </section>
+
+    <section id="booking" class="booking">
+      <h2>Book Your Adventure</h2>
+      <form class="booking-form">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <select required>
+              <option value="">Select Destination</option>
+              <option value="Chisinau">Chisinau</option>
+              <option value="Old Orhei">Old Orhei</option>
+              <option value="Bendery Fortress">Bendery Fortress</option>
+              <option value="Forest Codri">Forest Codri</option>
+              <option value="Lake Beleu">Lake Beleu</option>
+              <option value="Milestii Mici">Milestii Mici</option>
+          </select>
+          <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <div class="mascot-container">
+      <img src="images/sheep.png" alt="Friendly Moldova Guide" class="mascot">
+      <div class="mascot-message">
+          Welcome to Moldova Landmarks! Let me help you discover our beautiful country. Click on any attraction to learn more!
       </div>
     </div>
-  </section>
 
-  <section id="booking" class="booking">
-    <h2>Book Your Adventure</h2>
-    <form class="booking-form">
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <select required>
-            <option value="">Select Destination</option>
-            <option value="Chisinau">Chisinau</option>
-            <option value="Old Orhei">Old Orhei</option>
-            <option value="Bendery Fortress">Bendery Fortress</option>
-            <option value="Forest Codri">Forest Codri</option>
-            <option value="Lake Beleu">Lake Beleu</option>
-            <option value="Milestii Mici">Milestii Mici</option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
-</section>
-
-<div class="mascot-container">
-  <img src="images/sheep.png" alt="Friendly Moldova Guide" class="mascot">
-  <div class="mascot-message">
-      Welcome to Moldova Landmarks! Let me help you discover our beautiful country. Click on any attraction to learn more!
-  </div>
-</div>
-
-  <footer id="contact" class="footer">
-    <h2>Contact Us</h2>
-    <p>Email: info@moldovalandmarks.com</p>
-    <p>Phone: +373 123 456 78</p>
-    <p>Address: Chisinau, Moldova</p>
-    <p>&copy; 2025 Moldova Landmarks. All rights reserved.</p>
-  </footer>
+    <footer id="contact" class="footer">
+      <h2>Contact Us</h2>
+      <p>Email: info@moldovalandmarks.com</p>
+      <p>Phone: +373 123 456 78</p>
+      <p>Address: Chisinau, Moldova</p>
+      <p>&copy; 2025 Moldova Landmarks. All rights reserved.</p>
+    </footer>
 </body>
 </html>
